@@ -110,4 +110,48 @@ print(gastos)
   * Tkinter: biblioteca padrão do Python para a criação de interfaces gráficas (GUI), permitindo o desenvolvimento de aplicativos desktop com uma variedade de widgets.
 * As sugestões que aparecem na plataforma são resultados de análises de hábitos de compras e padrões de busca, realizadas tanto com Python — machine learning e Big Data.
 * Ouvir podcast: https://cursos.alura.com.br/extra/hipsterstech/ecossistema-python-hipsters-ponto-tech-387-a9175
+
+---
+
+### Python: Crie a sua primeira aplicação:
+
+#### 01. Manipulação de Strings:
+
+* 03 - Primeiro programa:
+  * A ideia é termos um aplicativo de comida/restaurante.
+  * Será desenvolvimento backend.
+  * Criamos um arquivo app.py e pra rodar digitamos python e o nome do arquivo.
+* 04 - Boas práticas:
+  * Python utiliza o snake case / underscore case para variáveis, funções e métodos.
+  * Classes ficam no PascalCase.
+* 05 - Interpolação de String:
+  * Python aceita aspas duplas e simples.
+  * O ideal é escolher um padrão pro projeto e mante-lo sempre igual.
+  * Também podemos usar as aspas duplas três vezes, para manter as quebras de linhas.
+  * Usado https://fsymbols.com/ para pegar textos diferentes.
+  * Para usar interpolação de strings, basta colocar um f antes da string e deixar as variáveis entre chaves.
+* 06 - Para saber mais: The Zen of Python:
+```
+  Bonito é melhor que feio.\
+  Explícito é melhor que implícito.\
+  Simples é melhor que complexo.\
+  Complexo é melhor que complicado.\
+  Plano é melhor que aninhado.\
+  Esparso é melhor que denso.\
+  Legibilidade conta.\
+  Casos especiais não são especiais o bastante para quebrar as regras.\
+  Embora praticidade vença a pureza.\
+  Erros nunca devem passar silenciosamente.\
+  A menos que sejam explicitamente silenciados.\
+  Diante da ambiguidade, recuse a tentação de adivinhar.\
+  Deveria haver uma — e preferencialmente só uma — maneira óbvia de fazer algo.\
+  Embora essa maneira possa não ser óbvia a princípio a menos que você seja holandês.\
+  Agora é melhor que nunca.\
+  Embora nunca seja frequentemente melhor que agora mesmo.\
+  Se a implementação é difícil de explicar, é uma má ideia.\
+  Se a implementação é fácil de explicar, pode ser uma boa ideia.\
+  Namespaces são uma grande ideia — vamos fazer mais dessas!\
+```
+* 07 - Hora da prática: a função print():
+  * Criado [print_example.py](python-crie-sua-primeira-aplicacao/print_example.py) com exemplos.
 * 
