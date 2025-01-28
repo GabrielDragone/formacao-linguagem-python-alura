@@ -1,7 +1,7 @@
 import os
 
 # Lista:
-restaurantes = []
+restaurantes = ["Pizza Boy", "Sushi Girl"]
 
 def exibir_nome_do_programa():
     print("""
@@ -29,11 +29,9 @@ def opcao_invalida():
     print("Opção inválida!")
     digite_para_voltar_ao_menu()
 
-
 def digite_para_voltar_ao_menu():
-    input("Digite qualquer coisa para voltar ao menu principal: ")
+    input("\nTecle ENTER para voltar ao menu principal")
     main()
-
 
 def cadastrar_novo_restaurante():
     #pass # Se uma função não tem implementação, vai ficar com erro. Colocando pass vai ignorar.
@@ -44,7 +42,11 @@ def cadastrar_novo_restaurante():
     digite_para_voltar_ao_menu()
 
 def listar_restaurantes():
-    print(f"Listando restaurantes cadastrados: {restaurantes}")
+    # print(f"Listando restaurantes cadastrados: {restaurantes}")
+    print("Listando restaurantes cadastrados:")
+
+    for restaurante in restaurantes:
+        print(f".{restaurante}")
     digite_para_voltar_ao_menu()
 
 def escolher_opcao_com_if():

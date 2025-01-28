@@ -201,4 +201,14 @@ print(gastos)
     * ``tupla = (1,’olá mundo’,True,9.7)``
   * Listas são estruturas mutáveis, ou seja, podemos modificar, adicionar, remover através de append, remove, pop e insert. Menos eficiente especialmente quando se trata de manipulação de grandes conjuntos de dados.
   * Tuplas são imutáveis, uma vez declarada, não podem ser alteradas e devido à isso, tem um desempenho melhor para operações.
-  * 
+* 05 - Laços de repetição for:
+  * Usar da seguinte forma: ```for restaurante in restaurantes:```
+* 06 - While:
+  * [while_example.py](python-crie-sua-primeira-aplicacao/for_while_example.py)
+  * O for é utilizado quando se conhece previamente o número de iterações que devem ser realizadas.
+    * Ideal em casos de elementos em sequências como listas, tuplas, strings ou ranges.
+  * Python fornece for e while como estruturas de repetição para execução de blocos.
+  * O while será usado quando não se conhece previamente o número de iterações que devem ser realizadas, mas ainda sim precisa de uma condição específica pra manter o bloco de código em repetição.
+  * A escolha entre um ou outro vai depender da natureza específica do problema que estamos resolvendo.
+* 07 - Refatorando o código:
+  * Refatorando trechos repetidos.
