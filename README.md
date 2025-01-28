@@ -212,3 +212,5 @@ print(gastos)
   * A escolha entre um ou outro vai depender da natureza específica do problema que estamos resolvendo.
 * 07 - Refatorando o código:
   * Refatorando trechos repetidos.
+* 10 - Hora da prática: listas, for e try except:
+  * Exercícios realizados em [exercicios_03_10.py](python-crie-sua-primeira-aplicacao/exercicios_03_10.py).
