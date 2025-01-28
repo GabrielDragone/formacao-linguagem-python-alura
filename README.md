@@ -154,4 +154,35 @@ print(gastos)
 ```
 * 07 - Hora da prática: a função print():
   * Criado [print_example.py](python-crie-sua-primeira-aplicacao/print_example.py) com exemplos.
-* 
+
+#### 02. Módulos e funções:
+
+* 02 - Módulos e funções:
+  * 03 - Tipo int e bool:
+    * Por padrão quando usamos o input, o python atribui a variavel como string.
+    * Temos que tratar essa variavel alterando para int.
+  * 04 - Funções e import:
+    * Escrever funções no padrão snake_case.
+    * Para importar algo `import os`.
+    * Função bloco de código que vai executar uma ação (ideal) no momento que for chamada.
+  * 05 - Aprofundando em funções:
+    * Para definir o arquivo principal do programa, criar a função main.
+    * Quando pedimos pra um programa em python ser executado, o interpretador criar uma variavel chamada name.
+    * E se o name for main, significa que esse código não será importado por outros scripts do código python.
+    * Separadas as funções de exibir nome do programa, menu e escolha de opções.
+    * Dentro do main definido todos os passos pro programa executar.
+  * 06 - Para saber mais: instruções match:
+    * Uma forma mais elegante e simplificada de trabalhar com opções.
+    * Vantagens do Match:
+      * Lidar com condições complexas e múltiplos padrões de maneira mais intuitiva.
+      * Sintaxe concisa melhora a legibilidade do código, especialmente em casos complexos.
+      * Permite desestruturação direta, evitando repetição excessiva de variáveis.
+      * Adiciona expressividade ao código, especialmente em situações de correspondência de padrões.	
+    * Vantagens do If:
+      * Implementação clássica e amplamente conhecida.
+      * Amplamente suportada em todas as versões do Python.
+      * Estrutura simples e direta para lógica condicional básica.
+      * Pode ser mais intuitiva para devs familiarizados com estruturas de controle convencionais.
+  * 09 - Hora da prática: condicionais:
+    * Realizado no arquivo: [exercicios_02_09.py](python-crie-sua-primeira-aplicacao/exercicios_02_09.py)
+
