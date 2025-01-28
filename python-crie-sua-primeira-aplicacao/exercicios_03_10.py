@@ -5,6 +5,7 @@
 def exercicio_um():
     print("exercicio_um")
     listaNumeros = []
+
     for i in range(1, 11):
         listaNumeros.append(i)
     print(f"\nLista Números: {listaNumeros}")
@@ -26,7 +27,7 @@ def exercicio_dois():
 def exercicio_tres():
     print("\nexercicio_tres")
     calculo = 0
-    for i in range(1, 11):
+    for i in range(1, 11): #for i in range(1, 11, 2): da pra fazer assim tbm, pulando de 2 em 2 começando com 1.
         if i % 2 == 1:
             calculo += i
     print(f"Resultado: {calculo}")
@@ -54,18 +55,45 @@ def exercicio_seis():
     while numero >= 0:
         try:
             numero = int(input("Informe um número positivo: "))
-            lista_de_numeros.append(numero)
+            if numero >= 0:
+                lista_de_numeros.append(numero)
         except:
             print("Valor inválido informado!")
             lista_de_numeros.append(0)
 
     total = 0
     for numero_iterado in lista_de_numeros:
-        total =+ numero_iterado
+        total += numero_iterado
 
     print(f"Total calculado: {total}")
 
 # 7 - Construa um código que calcule a média dos valores em uma lista. Utilize um bloco try-except para lidar com a divisão por zero, caso a lista esteja vazia.
+def exercicio_sete():
+    print("\nexercicio_sete")
+    lista_de_numeros = []
+    numero = 0
+    total = 0
+    media = 0
+
+    while numero >= 0:
+        try:
+            numero = int(input("Informe um número positivo: "))
+            if numero >= 0:
+                lista_de_numeros.append(numero)
+        except:
+            print("Valor inválido informado!")
+
+    for numero_iterado in lista_de_numeros:
+        total += numero_iterado
+
+    try:
+        media = total / len(lista_de_numeros)
+    except ZeroDivisionError:
+        print("A lista está vazia, não é possível calcular a média.")
+    except Exception as e:
+        print(f"Ocorreu um erro: {e}")
+
+    print(f"Média calculada: {media}")
 
 def main():
     # exercicio_um()
@@ -73,7 +101,8 @@ def main():
     # exercicio_tres()
     # exercicio_quatro()
     # exercicio_cinco()
-    exercicio_seis()
+    # exercicio_seis()
+    exercicio_sete()
 
 if __name__ == '__main__':
     main()
