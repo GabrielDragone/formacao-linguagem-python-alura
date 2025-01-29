@@ -250,4 +250,13 @@ print(gastos)
 * 08 - Hora da prática: dicionários:
   * Realizados no arquivo [exercicios_04_08.py](python-crie-sua-primeira-aplicacao/exercicios_04_08.py), porém não concordo com a solução da 05, ficou dificil de entender.
 
-    
+#### 05. Consolidando os conhecimentos:
+* 02 - Afro Python - Apresentação:
+  * Falado sobre docstring usado para documentar funções e tornar o código mais fácil de entender:
+```
+''' Exemplo de como escrever os dados '''
+ou
+""" Exemplo de como escrever os dados """
+```
+  * De forma resumida é utilizada para ajudar outros devs a entenderem o que cada função faz, sem necessitar ler a mesma por inteiro.
+  * Precisa ser clara e direta.

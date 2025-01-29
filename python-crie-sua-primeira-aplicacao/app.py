@@ -9,6 +9,7 @@ restaurantes = [
 ]
 
 def exibir_nome_do_programa():
+    """ Exibe o nome do programa em um caractere especial e chamativo """
     print("""
     ░██████╗░█████╗░██████╗░░█████╗░██████╗░  ███████╗██╗░░██╗██████╗░██████╗░███████╗░██████╗░██████╗
     ██╔════╝██╔══██╗██╔══██╗██╔══██╗██╔══██╗  ██╔════╝╚██╗██╔╝██╔══██╗██╔══██╗██╔════╝██╔════╝██╔════╝
@@ -20,17 +21,20 @@ def exibir_nome_do_programa():
     """)
 
 def exibir_menu():
+    """ Exibe as opções que o programa fornece ao usuario """
     print("1. Cadastrar restaurante")
     print("2. Listar restaurantes")
     print("3. Alternar estado do restaurante")
     print("4. Sair\n")
 
 def finalizar_app():
+    """ Fecha o app """
     #os.system('cls') # limpar a tela
     # print('\033c')
     print("Encerrando o programa")
 
 def opcao_invalida():
+    """ Apresenta opção inválida e volta para o menu """
     print("Opção inválida!")
     digite_para_voltar_ao_menu()
 
@@ -39,6 +43,14 @@ def digite_para_voltar_ao_menu():
     main()
 
 def cadastrar_novo_restaurante():
+    """ Essa função é responsável por cadastrar novos restaurantes
+    Inputs:
+        - Nome restaurante.
+        - Categoria.
+
+        Outputs:
+        - Adiciona novo restaurante na lista de restaurantes.
+    """
     #pass # Se uma função não tem implementação, vai ficar com erro. Colocando pass vai ignorar.
     exibir_subtitulo("Cadastro de novos restaurantes")
     novo_restaurante = input("Digite o nome do restaurante que deseja cadastrar: ")
@@ -56,6 +68,7 @@ def cadastrar_novo_restaurante():
     digite_para_voltar_ao_menu()
 
 def listar_restaurantes():
+    """ Lista todos os restaurantes cadastrados no sistema """
     # print(f"Listando restaurantes cadastrados: {restaurantes}")
     exibir_subtitulo("Listando restaurantes cadastrados:")
 
@@ -69,6 +82,7 @@ def listar_restaurantes():
     digite_para_voltar_ao_menu()
 
 def escolher_opcao_com_if():
+    """ Trata as escolhas do usuário de acordo com o que ele digitou usando IF """
     try:
         # Para ler o que o usuário digitou:
         #opcao_escolhida = input("Escolha uma opção:")
@@ -97,6 +111,7 @@ def escolher_opcao_com_if():
         opcao_invalida()
 
 def escolher_opcao_com_match():
+    """ Trata as escolhas do usuário de acordo com o que ele digitou usando MATCH """
     try:
         opcao_escolhida = int(input("Escolha uma opção:"))
 
@@ -117,6 +132,7 @@ def escolher_opcao_com_match():
         opcao_invalida()
 
 def alterar_status_restaurante():
+    """ Altera o status do restaurante para o status contrário ao atual """
     exibir_subtitulo("Alterando o estado do restaurante")
 
     restaurante_encontrado = False
@@ -136,6 +152,7 @@ def alterar_status_restaurante():
     digite_para_voltar_ao_menu()
 
 def exibir_subtitulo(texto):
+    """ Trata o subtitulo informado e formata para deixar melhor visivel """
     linha = "*" * (len(texto)) # Colocar vários * no tamanho do texto
     print()
     print(linha)
@@ -144,6 +161,7 @@ def exibir_subtitulo(texto):
     print()
 
 def main():
+    """ Função principal que roda quando o projeto é iniciado e apresenta as opções ao usuario """
     exibir_nome_do_programa()
     exibir_menu()
     escolher_opcao_com_if()
