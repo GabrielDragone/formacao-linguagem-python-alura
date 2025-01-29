@@ -214,3 +214,40 @@ print(gastos)
   * Refatorando trechos repetidos.
 * 10 - Hora da prática: listas, for e try except:
   * Exercícios realizados em [exercicios_03_10.py](python-crie-sua-primeira-aplicacao/exercicios_03_10.py).
+
+#### 04. Dicionários:
+* 02 - Dicionários:
+  * Estrutura chave e valor.
+  * Foi alterada a estrutura de lista string para lista dicionário: ``[{ 'nome': 'Pizza Boy', 'categoria': 'Pizzaria', 'ativo': True }]``.
+* 03 - Atualizando o cadastro:
+  * Alterada a estrutura de cadastro de string para adicionar um dicionário novo, mas atribuindo o ativo como False.
+* 04 - Ativando restaurantes:
+  * Desenvolvido funções do alterar_status_restaurante para alterar o status de acordo com o nome do restaurante informado.
+  * Exemplo de if ternário.
+  * E uso de not.
+* 05 - Melhorando a visualização:
+  * Usado if ternário para traduzir o Boolean.
+  * Utilizado len() para gerar um texto com * de acordo com o tamanho do subtitulo.
+  * Utilizando ljust pra ajustar o pad de cada texto.
+* 06 - Interpretando dicionários:
+  * Formas de atualizar registros:
+  ```
+  livro['preco'] = 69.90
+  ou
+  livro.update({'preco': 69.90})
+  ```
+* 07 - Decifrando dicionários com ternários:
+  * Forma de acessar estruturas dicionários diretamente e usando if ternário:
+ ```
+  credenciais_clientes = {
+    'alice123': {'username': 'alice123', 'password': 'alic3P@ssw0rd', 'status': 'active'},
+    'bob456': {'username': 'bob456', 'password': 'b0bP@ssword!', 'status': 'inactive'},
+    'charlie789': {'username': 'charlie789', 'password': 'Ch@rlieP@ss9', 'status': 'active'}
+}
+  
+  alerta = 'Enviar alerta!' if credenciais_clientes['bob456']['status'] == 'inactive' else 'Sem alerta'
+  ```
+* 08 - Hora da prática: dicionários:
+  * Realizados no arquivo [exercicios_04_08.py](python-crie-sua-primeira-aplicacao/exercicios_04_08.py), porém não concordo com a solução da 05, ficou dificil de entender.
+
+    
