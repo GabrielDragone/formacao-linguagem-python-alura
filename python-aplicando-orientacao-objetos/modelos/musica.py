@@ -15,7 +15,7 @@ class Musica:
     def listar_musicas():
         print("Listando músicas....")
         for musica in Musica.musicas:
-            print(f"Música: {musica.nome} | Artista: {musica.artista} | Duração: {musica.duracao}")
+            print(f"Música: {musica._nome} | Artista: {musica.artista} | Duração: {musica.duracao}")
 
 
 # musica1 = Musica()

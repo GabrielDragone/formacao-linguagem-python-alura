@@ -20,7 +20,7 @@ class Personagem():
             personagens_ordenados = Personagem.personagens
 
         for personagem in personagens_ordenados:
-            print(f"{personagem.id} - {personagem.nome} da raça {personagem.raca} com poder de luga de {personagem.nivel_poder}")
+            print(f"{personagem.id} - {personagem._nome} da raça {personagem.raca} com poder de luga de {personagem.nivel_poder}")
 
 
 goku = Personagem("Goku", "Sayajin", 9000)
